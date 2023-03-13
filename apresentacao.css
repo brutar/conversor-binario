@@ -1,69 +1,96 @@
+
 #area{
-    position: absolute;
-    right: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 350px;
-    height: 220px;
+    height: 250px;
     border-radius: 10px;
     box-shadow: 5px;
-    background-color: #94c396;
+    background-color: #16292F;
     color: #fdffff;
-    margin-top: 20%;
-    box-shadow:10px 05px 05px #54635e;
+    margin: 20% auto 0 auto;
+    transition: 0.4s ease;
+    opacity: 0.9;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
 }
 #titulo{
+    padding-top: 5%;
     text-align: center;
     font-family:Trebuchet MS, sans-serif;
     font-size: 20px;
 }
 #campoDecimal{
-    width: 100px;
-    height: 25px;
-    position: relative;
-    right: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 30px;
     text-align: center;
-    outline: none;
-    border-style: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    border:1px solid #54635e;
 }
 #campoDecimal:focus{
     background-color: #e3e4e3;
 }
 #btoConverte{
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translate(-170%,90%);
-    background-color: #ccd5ae;
+    background-color: #040F16;
     border-radius: 5px;
-    width: 90px;
+    width: 100px;
     height: 30px;
     border:1px solid #54635e;
+    margin: 5% auto 0 auto;
 }
 #btoConverte{
     cursor: pointer;
-    color: #3e4643;
+    color: #eaf0ee;
 }
 #btoConverte:focus{
-    background-color: #b3be8f;
+    background-color: #304143;
 }
 #resultado{
-    position: absolute;
-    left: 30%;
-    right: 30%;
-    transform: translate(-10%,20%);
-    height: 30px;
-    background-color: rgb(227, 228, 227);
-    text-align:center;
-    padding-top: 1%;
-    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 30px;   
+    color: rgb(192, 192, 192);
     border-radius: 5px;
     outline: none;
     border: none;
     transition: all 600ms ease-in-out;
+    margin: 5% auto 0 auto;
 }
-.invisivel{
-    display: none;
+@media (max-width: 2300px)
+{
+    body{
+        background-image: url("https://images.unsplash.com/photo-1611702700114-ac96de0952e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #area{
+        width: 600px;
+    }
+}
+@media (max-width: 720px)
+{
+    body{
+        background-image: url("https://images.unsplash.com/photo-1611702700114-ac96de0952e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    #area{
+        width: 600px;
+    }
+}
+@media (max-width: 550px)
+{
+    body{
+        background-image: url("https://images.unsplash.com/photo-1611702700114-ac96de0952e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80");
+        background-size: cover;
+        background-size:auto;
+        background-repeat: no-repeat;
+    }
+    #area{
+        width: 480px;
+    }
 }

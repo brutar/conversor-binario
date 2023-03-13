@@ -1,6 +1,6 @@
-var numDecimal = document.querySelector("#campoDecimal");
-var btoConverte = document.querySelector("#btoConverte");
-var resultado = document.querySelector("#resultado");
+const numDecimal = document.querySelector("#campoDecimal");
+const btoConverte = document.querySelector("#btoConverte");
+const resultado = document.querySelector("#resultado");
 
 numDecimal.addEventListener("input", function(e){
     e.preventDefault();
@@ -14,11 +14,13 @@ numDecimal.addEventListener("input", function(e){
 
             if (!OK){
                 resultado.classList.add("invisivel");
+                resultado.innerHTML = "";
             }else if(valorDecimal <0){
                 resultado.classList.add("invisivel");
+                resultado.innerHTML = "";
             }else{
                 var numeroBinario = converteNumeroDecimal(valorDecimal);
-                resultado.setAttribute("value",numeroBinario);
+                resultado.innerHTML = numeroBinario;
                 resultado.classList.remove("invisivel");
             }
     });
